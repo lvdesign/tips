@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html class="no-js" lang="fr">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+            <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+            
+            <link rel="apple-touch-icon" href="apple-touch-icon.png">
+             <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+             
+             
+             <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" /
+              <script src="{{ site.baseurl }}/j/vendor/modernizr-2.8.3.min.js"></script>
+        </head>
+        
+        
+        <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+         <header>
+        	 <h1><a href="{{ site.baseurl }}/"><span class="retour-force"><img src="{{ site.baseurl }}/images/lvdesign.png" alt="{{site.name}}" /></span>{{site.name}}</a></h1>
+        	 <nav>
+        	 	<ul class="nav-principal">
+        	 	<li><a class="page-link" href="{{ site.baseurl }}/">Blog</a></li>
+        	 		<li><a class="page-link" href="{{ site.baseurl }}/about">About</a></li>
+        	 		<li><a class="page-link" href="{{ site.baseurl }}/projets">Projets</a></li>
+        	 	</ul>
+        	 </nav>
+         </header>
+         <div class="wrapper"><!--navtopEnd-->

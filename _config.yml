@@ -1,0 +1,11 @@
+# Site settings
+name: test-design
+description: Partager des recherches, des tutoriaux pour peut-etre un meilleur developpement web…
+baseurl: /tips 
+
+twitter_username: lvdesign
+github_username:  lvdesign
+
+# Build settings
+markdown: kramdown
+highlighter: pygments

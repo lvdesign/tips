@@ -1,0 +1,193 @@
+/*v1*/
+
+
+@import "restlv.css";
+
+html{
+	text-align: center;
+	
+	font-family:  "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: normal;
+	font-size: 62.5%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.5;
+	
+	}
+
+.wrapper{
+	margin: 3em auto;
+	max-width: 70%;
+}
+
+header{
+	text-align: center;
+}
+
+.nav-principal{
+	margin: 1em 0;
+	padding: 0;
+}
+.nav-principal li{
+display: inline;
+	margin: 0;
+	padding: .5em .8em;
+}
+pre{
+	white-space: pre-wrap;
+}
+
+a:link,a:visited{
+	color: #ccc;
+	text-decoration: none;
+}
+a:hover,a:focus, a.focus, a:active{
+	color: gray;
+	text-decoration: underline;
+}
+
+h1, h2,h3,h4,h5,h6{
+	margin-top:0 ;
+}
+h1{
+	font-size: 28px;
+	font-size: 2.8rem;
+	font-weight: normal;
+}
+
+h2{
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+h3{
+	font-size: 20px;
+	font-size: 2rem;
+}
+h5{
+	font-style: italic;
+}
+h6{
+	font-weight: bold;
+}
+
+p, h5,h6, ol, ul,li, pre{
+	font-size: 17px;
+	font-size: 1.7rem;
+}
+.retour-force{
+	display: block;
+}
+/*POST*/
+.post-meta{
+	text-transform: uppercase;
+	font-size: small;
+	padding: 0 .5em;
+}
+ol, ul {
+	list-style: none;
+
+}
+
+ol,ul,li{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*fancy*/
+.icon-github,
+.icon-twitter,
+.github-icon-svg,
+
+.twitter-icon-svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+}
+
+/*effet slidemenu - 
+https://adactio.com/articles/7985
+*/
+.control {
+    display: inline-block;
+    float: right;
+    border: 1px solid;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+}
+
+.wrapper [role="main"] {
+    background: white;
+    color: black;
+}
+
+.wrapper [role="navigation"] {
+    background: black;
+    color: white;
+}
+
+
+.wrapper [role="main"],
+.wrapper [role="navigation"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    padding: 1em 2% 3em;
+}
+
+@media all and (min-width: 35em) {
+
+.control {
+    display: none;
+}
+
+.wrapper {
+    display: table;
+}
+
+.wrapper [role="navigation"] {
+    display: table-caption;
+    min-height: 0;
+    -webkit-columns: 6 15em;
+    -moz-columns: 6 15em;
+    columns: 6 10em;
+}
+.wrapper [role="navigation"] h2 {
+   -webkit-column-span: all;
+   -moz-column-span: all;
+   column-span: all;
+}
+}/*endDesk*/
+
+
+@media all and (max-width: 35em) {
+.cutsthemustard [role="main"] {
+        -webkit-transition: all .25s;
+        transition: all .25s;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 100px;
+        right: 0;
+    }
+    .cutsthemustard [role="navigation"] {
+        width: 75%;
+        position: absolute;
+        z-index: 1;
+        top: 110px;
+        right: 0;
+    }
+    .cutsthemustard .active [role="main"] {
+        -webkit-transform: translateX(-75%);
+        -ms-transform: translateX(-75%);
+        transform: translateX(-75%);
+    }
+}/*endMob-js*/
