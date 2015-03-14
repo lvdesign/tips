@@ -1,12 +1,4 @@
----
-layout: post
-title: "un mot de passe ?"
-date:   2015-03-08 09:30:13
-categories: web
-
----
-
-##Pourquoi un mot de passe devrait être illisible ? 
+###Pourquoi un mot de passe doit être illisible ? 
 Ok, un mot de passe est toujours une somme de points car il doit être protégé. C'est tout à fait normal.
 Mais vous avez peut être parfois un doute en remplissant le champs du mot de passe. 
 Et alors, une petite phrase assassine vous dit _"Votre mot de passe n'est pas valide"_. 
@@ -17,9 +9,8 @@ Alors pour les utilisateurs de votre site, je vous propose une solution aperçu 
 Tout d'abord un formulaire. Vous voyez qu'il est basique. Rien n'indique que vous allez rendre lisible le champs "password", il est bien de type="password". Ce sera bien des points noirs qui rempliront le champs mais si javascript est désactivé, le formulaire restera tout simplement
 sous cette forme.
 
-#####-> script testé avec Safari, FF, Opera, Google Chrome.
-
-
+-> script testé avec Safari, FF, Opera, Google Chrome.
+```
  <form method="post" action="" id="form-user">
  	<fieldset>
  	<ul>
@@ -37,15 +28,15 @@ sous cette forme.
  	</fieldset>
  </form>
    
+```
 
+###Version avec jQuery de Jeremy Keith
+Le script utilise la librairie jQuery pour créer à la volée la transformation de votre champs de type="password " au type="text".
+```
+ <ul>
+ <li><a href="password-lisible-demo.html" alt="password lisible"  title="password lisible" >l'exemple du script en ligne</a></li>
+ </ul>
 
-
-##Version avec jQuery de Jeremy Keith
-Le script utilise la librairie jQuery pour créer à la volée la transformation 
-de votre champs de type="password " au type="text".
-
-
-<pre>
 jQuery(function($){
 	$('input:password').each(function() {
 			var psw_field = this;
@@ -68,18 +59,22 @@ jQuery(function($){
 				$(text_field).keyup(function() {
 					$(psw_field).val($(text_field).val() );
 					});
+			
 			});
+			
+			
 });
-</pre>
+```
+
+###Ma version en DOM-Javascript
+Le script utilise seulement le dom et javascript pour créer à la volée la transformation de votre champs de type="password " au type="text". C'est pratique car vous n'êtes pas obliger d'utilisez une Librairie ou même Jquery.
+``` 
+ <ul>
+ <li><a href="password-lisible-demo-js.html" alt="password lisible en javascript"  title="password lisible en javascript" >l'exemple du script en ligne</a></li>
+ </ul>
 
 
-##Ma version en DOM-Javascript
-Le script utilise seulement le dom et javascript pour créer à la volée la transformation 
-de votre champs de type="password " au type="text". 
-C'est pratique car vous n'êtes pas obliger d'utilisez une Librairie ou même Jquery.
-
-<pre> 
- 	//chargement script
+  	//chargement script
   	function addLoadEvent(func){
   		var oldonload = window.onload;
   		if(typeof window.onload != 'function'){
@@ -116,12 +111,18 @@ C'est pratique car vous n'êtes pas obliger d'utilisez une Librairie ou même Jq
   	var newInput = document.createElement("input");
   			newInput.setAttribute("type", "text");
 	        	newInput.setAttribute("style", "display:none");
+  	
   	insertAfter(newInput,psw);
+  	//
   	var id = "password";
+  	
   	var text_field = document.createElement("div");
   		text_field.innerHTML='<span class="pswToggle"><input type="checkbox" id="'+id+'-checkbox"><label for="'+id+'-checkbox ">Voir le mot de passe ? </label></span>';
-    insertAfter(text_field,newInput);
+      insertAfter(text_field,newInput);
+  	
+  	//
   	var check = document.getElementById("password-checkbox");
+  	
   	//affiche
   	check.onclick = function() {
   		if( this.checked != false){ 
@@ -137,14 +138,10 @@ C'est pratique car vous n'êtes pas obliger d'utilisez une Librairie ou même Jq
       	psw.style.display = 'inline';
       	}
   	}
-}//endprepareInputField
+  	
+}	//endprepareInputField
   	
  addLoadEvent(prepareInputTextField);
 
-</pre>
-
-####Et voila, a vous de choisir.
-[exemple](https://github.com/lvdesign/mot-de-passe.git)
-les fichiers : 
-*password-lisible-demo-jQuery.html, la version de J. Keith
-*password-lisible-demo-js.html, ma version light en js 
+```
+Et voila, a vous de choisir.
