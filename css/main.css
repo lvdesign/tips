@@ -76,20 +76,25 @@ h3, h4{
 h5{
 	font-style: italic;
 }
+
 h6{
-	font-weight: bold;
+	font-family: 'Cinzel', serif;
+	font-weight: 700;
+	font-size: 17px;
+	font-size: 1.7rem;
 }
 
 p{
 	line-height: 1.9;
 }
-p, h5, h6, ol, ul, li, pre{
+p, h5, ol, ul, li, pre{
 	font-size: 17px;
 	font-size: 1.7rem;
 	font-weight: normal;
 }
 
-p code, pre, code {white-space: pre-wrap; text-align: left;
+p + code, p + pre, pre, code { white-space: pre-wrap; text-align: left;
+
 }
 
 .retour-force{

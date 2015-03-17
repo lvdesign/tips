@@ -7,5 +7,5 @@ twitter_username: lvdesign
 github_username:  lvdesign
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
