@@ -93,8 +93,14 @@ p, h5, ol, ul, li, pre{
 	font-weight: normal;
 }
 
-p + code, p + pre, pre, code { white-space: pre-wrap; text-align: left;
+p + code, p + pre, pre, code { white-space: pre-wrap; text-align: left;}
 
+.form-test, .form-test *, .form-test ul > li 
+{
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-size: 1.2rem;
 }
 
 .retour-force{

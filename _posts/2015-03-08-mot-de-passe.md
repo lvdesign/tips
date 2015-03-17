@@ -4,6 +4,7 @@ title: "un mot de passe ?"
 date:   2015-03-08 09:30:13
 categories: web
 
+image: http://www.lvdesign.com.fr/blog/inews/lv-password-reader.png
 posts-attribution: LVdesign
 posts-attribution-link: http://lvdesign.com.fr
 ---
@@ -20,27 +21,11 @@ Alors pour les utilisateurs de votre site, je vous propose une solution aperçu 
 Tout d'abord un formulaire. Vous voyez qu'il est basique. Rien n'indique que vous allez rendre lisible le champs "password", il est bien de type="password". Ce sera bien des points noirs qui rempliront le champs mais si javascript est désactivé, le formulaire restera tout simplement
 sous cette forme.
 
-#####-> script testé avec Safari, FF, Opera, Google Chrome.
+######-> script testé avec Safari, FF, Opera, Google Chrome.
 
+Voici le formulaire et l'on peut voir le resultat :
 
- <form method="post" action="" id="form-user">
- 	<fieldset>
- 	<ul>
-     	<li><label for="nom">Nom :</label>
-     	&lt;input type="text" name="nom" id="nom" placeholder="Votre nom" /&gt;
-     	</li>
-     	<li><label for="password">Mot de passe :</label>
-     	&lt;input type="password" name="password" id="password" placeholder="Votre mot de passe" /&gt;
-     	</li>
-     	
-     	<li>
-     	&lt;input type="submit" name="submit" id="submit" value="Envoyez" /&gt;
-     	</li>
-    </ul>
- 	</fieldset>
- </form>
-   
-
+<img src="{{page.image}}"  alt= "le formulaire de base et le resultat"/>
 
 
 ##Version avec jQuery de Jeremy Keith
@@ -74,13 +59,13 @@ jQuery(function($) {
 </pre>
 
 
+
 ##Ma version en DOM-Javascript
 Le script utilise seulement le dom et javascript pour créer à la volée la transformation 
 de votre champs de type="password " au type="text". 
 C'est pratique car vous n'êtes pas obliger d'utilisez une Librairie ou même Jquery.
 
 <pre>
-
 //chargement script
 function addLoadEvent(func) {
     var oldonload = window.onload;
@@ -142,12 +127,12 @@ function prepareInputTextField() {
     } //endprepareInputField
 
 addLoadEvent(prepareInputTextField);
-
 </pre>
+
 
 
 #####Et voila, a vous de choisir.
 [exemple](https://github.com/lvdesign/mot-de-passe.git)
 les fichiers : 
-*password-lisible-demo-jQuery.html, la version de J. Keith
-*password-lisible-demo-js.html, ma version light en js 
+* password-lisible-demo-jQuery.html, la version de J. Keith
+* password-lisible-demo-js.html, ma version light en js 
