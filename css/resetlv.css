@@ -31,6 +31,10 @@
     width: 1px;
 }
 
+ol,ul{
+	list-style: none;
+}
+
 
 html {
   box-sizing: border-box;

@@ -1,13 +1,12 @@
 /*v1*/
 
 
-@import "restlv.css";
+@import "resetlv.css";
 
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower|Cinzel:400,700|VT323);
+/*@import url(http://fonts.googleapis.com/css?family=VT323);*/
 html{
 	text-align: center;
-	
-	font-family:  "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	font-weight: normal;
 	font-size: 62.5%;
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -15,7 +14,17 @@ html{
 	line-height: 1.5;
 	
 	}
+p, li{
+	font-family: 'Indie Flower', cursive;
+	letter-spacing: 1px;
+}
+pre,code{
+	font-family: 'VT323', monospace;
+}
 
+h1, h2{
+	font-family: 'Cinzel', serif;
+}
 .wrapper{
 	margin: 3em auto;
 	max-width: 70%;
@@ -34,10 +43,9 @@ display: inline;
 	margin: 0;
 	padding: .5em .8em;
 }
-pre{
-	white-space: pre-wrap;
-}
 
+
+/*LINK*/
 a:link,a:visited{
 	color: #ccc;
 	text-decoration: none;
@@ -47,26 +55,24 @@ a:hover,a:focus, a.focus, a:active{
 	text-decoration: underline;
 }
 
-h1, h2,h3,h4,h5,h6{
-	margin-top:0 ;
-}
+/*typo*/
 h1{
 	font-size: 28px;
 	font-size: 2.8rem;
 	font-weight: normal;
-}
+	}
 
 h2{
 	font-size: 24px;
 	font-size: 2.4rem;
-	font-weight: normal;
-	margin-top: 0;
+	margin-top: 1.2em;	
 }
 
-h3{
+h3, h4{
 	font-size: 20px;
 	font-size: 2rem;
 }
+
 h5{
 	font-style: italic;
 }
@@ -74,28 +80,37 @@ h6{
 	font-weight: bold;
 }
 
-p, h5,h6, ol, ul,li, pre{
+p{
+	line-height: 1.9;
+}
+p, h5, h6, ol, ul, li, pre{
 	font-size: 17px;
 	font-size: 1.7rem;
+	font-weight: normal;
 }
+
+p code, pre, code {white-space: pre-wrap; text-align: left;
+}
+
 .retour-force{
 	display: block;
 }
 /*POST*/
+.post-list{
+	margin: 1em 0;
+}
+.post-list > li{
+	margin-bottom: 2em;
+	border-top: 1px solid #333;
+}
 .post-meta{
 	text-transform: uppercase;
 	font-size: small;
 	padding: 0 .5em;
 }
-ol, ul {
-	list-style: none;
+.post-link{}
 
-}
 
-ol,ul,li{
-	margin: 0;
-	padding: 0;
-}
 
 
 /*fancy*/
