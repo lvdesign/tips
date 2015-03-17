@@ -51,7 +51,9 @@ html {
     *zoom: 1;
 }
 
-
+img, video, embed, figcaption{
+	max-width: 100%;
+}
 ::-moz-selection {
     background: black;
     color: white;
