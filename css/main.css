@@ -168,7 +168,7 @@ https://adactio.com/articles/7985
     min-height: 100%;
     padding: 1em 2% 3em;
 }
-
+/*
 @media all and (min-width: 35em) {
 
 .control {
@@ -193,7 +193,7 @@ https://adactio.com/articles/7985
 }
 }/*endDesk*/
 
-
+/*
 @media all and (max-width: 35em) {
 .cutsthemustard [role="main"] {
         -webkit-transition: all .25s;
