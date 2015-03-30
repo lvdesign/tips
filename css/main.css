@@ -25,15 +25,12 @@ pre,code{
 h1, h2{
 	font-family: 'Cinzel', serif;
 }
+
 .wrapper{
+	text-align: center;
 	margin: 3em auto;
 	max-width: 70%;
 }
-
-header{
-	text-align: center;
-}
-
 .nav-principal{
 	margin: 1em 0;
 	padding: 0;
@@ -46,11 +43,11 @@ display: inline;
 
 
 /*LINK*/
-a:link,a:visited{
+a:link, a:visited{
 	color: #ccc;
 	text-decoration: none;
 }
-a:hover,a:focus, a.focus, a:active{
+a:hover, a:focus, a.focus, a:active{
 	color: gray;
 	text-decoration: underline;
 }
@@ -93,7 +90,12 @@ p, h5, ol, ul, li, pre{
 	font-weight: normal;
 }
 
-p + code, p + pre, pre, code { white-space: pre-wrap; text-align: left;}
+p + code, 
+p + pre, 
+pre, 
+code { 
+white-space: pre-wrap; text-align: left;margin: 1em 0;
+}
 
 .form-test, .form-test *, .form-test ul > li 
 {
@@ -106,6 +108,7 @@ p + code, p + pre, pre, code { white-space: pre-wrap; text-align: left;}
 .retour-force{
 	display: block;
 }
+
 /*POST*/
 .post-list{
 	margin: 1em 0;
@@ -119,16 +122,11 @@ p + code, p + pre, pre, code { white-space: pre-wrap; text-align: left;}
 	font-size: small;
 	padding: 0 .5em;
 }
-.post-link{}
 
-
-
-
-/*fancy*/
+/*fancy icon*/
 .icon-github,
 .icon-twitter,
 .github-icon-svg,
-
 .twitter-icon-svg {
   display: inline-block;
   width: 16px;

@@ -131,7 +131,7 @@ addLoadEvent(prepareInputTextField);
 
 
 
-#####Et voila, a vous de choisir.
+######Et voila, a vous de choisir.
 [exemple](https://github.com/lvdesign/mot-de-passe.git)
 les fichiers : 
 * password-lisible-demo-jQuery.html, la version de J. Keith
