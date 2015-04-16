@@ -9,7 +9,7 @@ posts-attribution: LVdesign
 posts-attribution-link: http://lvdesign.com.fr
 ---
 
-
+#Un mot de passe lisible, revisite ?
 <img src="{{page.image}}"  alt= "le formulaire de base et le resultat"/>
 
 Récemment à la lecture de l'article "Inlining critical CSS for first-time visits" de [Jeremy Keith](https://adactio.com/journal/8504) sur un test de rapidité de téléchargement de fichier css  base sur le travail de [Scott Jehl](http://scottjehl.com) et du ["filament group"](http://www.filamentgroup.com/lab/performance-rwd.html), j'ai découvert qu'il avait amélioré sa version du password lisible. 
