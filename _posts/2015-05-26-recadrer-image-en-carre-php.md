@@ -67,6 +67,6 @@ Voila c’est une fonction simple et pratique. Vous pouvez la tester en local.
 [source de base mercier133](http://www.phpsources.org/scripts580-PHP.htm)
 
 ######Et voila, a vous de choisir.
-[le fichier](https://github.com/lvdesign/function-CarreImage-php)
+[le fichier](https://github.com/lvdesign/carre-image-php.git)
 
 
