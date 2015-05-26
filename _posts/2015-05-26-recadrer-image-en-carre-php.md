@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Recadrer une image en carre en php ?"
+title: "Recadrer une image au carre en php ?"
 date:  2015-04-16 09:30:13
 categories: web
 
