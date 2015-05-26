@@ -56,7 +56,8 @@ extrait du code
 	break;
 	}
 	}
-```
+	
+	```
 
 Pour mon site recettesoriginales.fr, ma fonction est pour plus de commodité insérée après avoir vérifié le format de l’image, sa taille, etc.
 Elle supporte la réécriture selon le format chargé.
