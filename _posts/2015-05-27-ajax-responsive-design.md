@@ -26,11 +26,12 @@ Je vous propose trois solutions dont une est vraiment interessante, celle de Sco
 ####Ma premiere version est de l’ajax de base pour une utilisation totalement contrôlable et ajustable. 
 Aucune librairie nécessaire. Du javascript pour manipuler du DOM de base et en dur.
 
-
-<!--JS-perso base
+source :
+JS-perso base
 System DOM/ajax
 base Hijax de Jeremy Keith
--->
+
+La page exemple sur mon site -> http://www.lvdesign.com.fr/clients/bien-dans-ma-vie.php
 
 le code
     ```
@@ -114,23 +115,31 @@ le code
     }
 
     addLoadEvent(prepareLinks);
-```
+    ```
 
-<p class="p-button" id="person" >
-<a href="detail/detailsRecettesOriginales.html"  title="details du projet"  class="plus-details" >Plus de details en images</a></p>
-<article class="group portfolios acenter data-plus" id="details"></article>
+Pour le html, voici la structure :
 
 
+    ```
+    <p class="p-button" id="person" >
+    <a href="detail/detailsRecettesOriginales.html"  title="details du projet"  class="plus-details" >Plus de details en images</a></p>
+    <article class="group portfolios acenter data-plus" id="details"></article>
+    ```
 
 
 
 ####Ma deuxième solution est construite avec jQuery, vous connaissez? 
 Simple a gérer mais il n’est peut être pas nécessaire de trimballer une bibliothèque pour cette seule action.
+La page exemple sur mon site -> http://www.lvdesign.com.fr/clients/regal.php
 
-<!--jQueryAjax-->
-<p class="p-button" id="target"><a href="detail/details-regal.html" title="details du projet"  class="plus-details" >Plus de details en images</a></p>							
-<article class="group portfolios acenter action-jq" ></article>
+La structure html :
+ 
 
+    ```
+    <!--jQueryAjax-->
+    <p class="p-button" id="target"><a href="detail/details-regal.html" title="details du projet"  class="plus-details" >Plus de details en images</a></p>							
+    <article class="group portfolios acenter action-jq" ></article>
+    ```
 
 le code
 
@@ -150,13 +159,20 @@ le code
 
 ####La troisieme avec cette biblio légère et avec une syntaxe responsable utilisant et manipulant les attributs de data  du html5. 
 
-<!--ajaxInclude
- RRD de Scott Jehl http://filamentgroup.com/lab/ajax_includes_modular_content/
--->			   										
+La page exemple sur mon site -> http://www.lvdesign.com.fr/clients/recettes-originales-site.php
 
-<p class="p-button"><a href="detail/details-azzaro.html" data-after data-interaction class="plus-details" >Plus de details </a><p>
 
--> jQuery, ajaxInclude.js, ajaxInclude-lv.js
+La structure Html
+
+
+    ```
+    <!--ajaxInclude
+     RRD de Scott Jehl http://filamentgroup.com/lab/ajax_includes_modular_content/
+     -->			   										
+	<p class="p-button"><a href="detail/details-azzaro.html" data-after data-interaction class="plus-details" >Plus de details </a><p>
+    ```
+
+-> il faut donc : la librairie jQuery, ajaxInclude.js, ajaxInclude-lv.js
 
 le code
 
