@@ -124,8 +124,8 @@ white-space: pre-wrap; text-align: left;margin: 1em 0;
 }
 
 /*fancy icon*/
-.icon-github,
-.icon-twitter,
+.icon--github,
+.icon--twitter,
 .github-icon-svg,
 .twitter-icon-svg {
   display: inline-block;
