@@ -7,6 +7,7 @@ categories: web
 image: http://www.lvdesign.com.fr/blog/inews/lv-password-reader.png
 posts-attribution: LVdesign
 posts-attribution-link: http://lvdesign.com.fr
+comments : true
 ---
 
 #Pourquoi un mot de passe devrait être illisible ? 
@@ -28,7 +29,7 @@ Voici le formulaire et l'on peut voir le resultat :
 <img src="{{page.image}}"  alt= "le formulaire de base et le resultat"/>
 
 
-##Version avec jQuery de Jeremy Keith
+## Version avec jQuery de Jeremy Keith
 Le script utilise la librairie jQuery pour créer à la volée la transformation 
 de votre champs de type="password " au type="text".
 
@@ -131,8 +132,9 @@ addLoadEvent(prepareInputTextField);
 
 
 
-######Et voila, a vous de choisir.
+###### Et voila, a vous de choisir.
 [exemple](https://github.com/lvdesign/mot-de-passe.git)
 les fichiers : 
+    
 * password-lisible-demo-jQuery.html, la version de J. Keith
 * password-lisible-demo-js.html, ma version light en js 
