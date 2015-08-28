@@ -7,7 +7,7 @@ categories: web
 image: http://www.lvdesign.com.fr/blog/inews/lv-password-reader.png
 posts-attribution: LVdesign
 posts-attribution-link: http://lvdesign.com.fr
-comments : false
+comments : true
 ---
 
 #Pourquoi un mot de passe devrait être illisible ? 
