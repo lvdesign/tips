@@ -37,6 +37,7 @@ pre,code{
 	font-family: 'VT323', monospace;
 }
 
+
 h1, h2{
 	font-family: 'Cinzel', serif;
 }
@@ -89,13 +90,26 @@ h5{
 	font-style: italic;
 }
 
+/*
+font-style: normal;
+font-weight: 400;
+font-family: "cooper-black-std",sans-serif;
+*/
 h6{
+	font-family: "cooper-black-std",sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	font-size: 1.7rem;
+}
+
+
+/*h6{
 	font-family: 'Cinzel', serif;
 	font-weight: 700;
 	font-size: 17px;
 	font-size: 1.7rem;
 }
-
+*/
 p{
 	line-height: 1.9;
 }
