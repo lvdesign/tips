@@ -5,6 +5,8 @@
 
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower|Cinzel:400,700|VT323);
 /*@import url(http://fonts.googleapis.com/css?family=VT323);*/
+
+
 html{
 	text-align: center;
 	font-size: 62.5%;
@@ -12,12 +14,25 @@ html{
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	line-height: 1.5;
-	
 	}
+/*
+TypeKit:::
+font-family: "good-kitty",cursive;
+font-style: normal;
+font-weight: 400;
+*/
+p, li{
+	font-family:  "good-kitty", cursive;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+/*	
 p, li{
 	font-family: 'Indie Flower', cursive;
 	letter-spacing: 1px;
 }
+*/
 pre,code{
 	font-family: 'VT323', monospace;
 }
