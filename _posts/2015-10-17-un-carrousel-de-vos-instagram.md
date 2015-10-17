@@ -12,18 +12,15 @@ posts-attribution-link: http://lvdesign.com.fr
 
 # Un plugin jQuery pour ce carousel : makeCarouselInstaOwl();
 
-### Creation d'un carrousel avec owl.js ( de Bartosz Wojciechowski) 
-et la diffusion de vos photos instagram avec instafeed.js (de Stevens Chobert )
+### Création d'un carousel avec owl.js (de Bartosz Wojciechowski) et la diffusion de vos photos instagram avec instafeed.js (de Stevens Chobert )
 
 
-Voici un petit gadget pour animer votre site en quelques clics, si vous avez un compte Instagram!
+Voici un petit gadget (plugin basic) pour animer votre site en quelques clics, si vous avez un compte Instagram!
 J'ai réalisé ce principe sous la forme d'un plugin basic en jQuery.
-Vous trouverez aussi la version de base, mais je pense que la construction en plugin est plus facile à implemanter.
-Vous sélectionnez une photo sur votre instagram et lui donnez un hashtag bien spécifique et le tour est joué. 
-Ce carousel est modulable avec les paramètres de instafeed et aussi pour son aspect avec owl.js. A vous de jouer…
+Vous trouverez aussi la version de base, mais je pense que la construction en plugin est plus facile à implementer.
+Vous sélectionnez une photo sur votre compte instagram et vous lui donnez un hashtag bien spécifique, le tour est joué. 
+Ce carousel est modulable avec les paramètres de la librairie instafeed et aussi son aspect avec owl.js. A vous de jouer…
 Et surtout merci à ces développeurs Bartosz Wojciechowski et Stevens Chobert, sans eux, j'aurais du recréer une sacrée roue.
-le code :
-
 
 Pour tester en live voici le lien :
 la version de base :
@@ -38,6 +35,9 @@ Source :
 [Instafeed](http://instafeedjs.com/)
     
 
+le code du plugin makeCarouselInstaOwl():
+
+
 ```javascript
 
     Don't forget to document your plugin! 
@@ -47,14 +47,14 @@ Source :
     contact : mailbox(at)lvdesign.com.fr
 
     methode :
-    $('.owl-slider').makeCarousel();
+    $('.owl-slider').makeCarouselInstaOwl();
 
     besoin de :
-    # plugins : 
+    # plugins parents : 
     owl.js version 1 
     instafeed.js
 
-    # parametrer vos variables pour 
+    # parametrer vos variables pour: 
     -> instafeed.js
     https://github.com/stevenschobert/instafeed.js#advanced-options
 
@@ -83,17 +83,19 @@ Source :
      clientId: '97ae5f4c024c4a91804f959f43f2635f', /* votre clientID */
      target: 'instafeed',
      get: 'tagged',
-     tagName: 'cat', /* votre tag reference*/
+     tagName: 'cat', /* votre hashtag reference*/
      links: true,
      limit: 25,
      sortBy: 'most-recent',
      resolution: 'standard_resolution',
+     
      /* pleins d'autres options voir notice
      https://github.com/stevenschobert/instafeed.js
      https://github.com/stevenschobert/instafeed.js#advanced-options
      */
     
     after: function () {
+    
     //Set up Owl carousel       
                            $carousel.owlCarousel({
                               loop:true,
