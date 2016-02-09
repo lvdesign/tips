@@ -38,8 +38,8 @@ Source :
 
 Et voici le code du plugin makeCarouselInstaOwl():
 
-
-```javascript
+```
+javascript
 
     Don't forget to document your plugin! 
     Include any assumptions that your plugin is making.
