@@ -11,6 +11,7 @@ published: true
 
 
 
+
 # Un plugin jQuery pour ce carousel : makeCarouselInstaOwl();
 
 ### Création d'un carousel avec owl.js (de Bartosz Wojciechowski) et la diffusion de vos photos instagram avec instafeed.js (de Stevens Chobert )
