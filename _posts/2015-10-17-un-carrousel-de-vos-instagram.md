@@ -1,16 +1,14 @@
 ---
 layout: post
-title: "un carousel de vos instagram sur votre site"
-date:  2015-10-17 09:30:13
+title: un carousel de vos instagram sur votre site
+date: {}
 categories: web
-
-
-posts-attribution: LVdesign
-posts-attribution-link: http://lvdesign.com.fr
-
-
-comments : true
+"posts-attribution": LVdesign
+"posts-attribution-link": "http://lvdesign.com.fr"
+comments: true
+published: true
 ---
+
 
 
 # Un plugin jQuery pour ce carousel : makeCarouselInstaOwl();
@@ -33,12 +31,11 @@ Version plugin jQuery :
 [les fichiers du test ](https://github.com/lvdesign/carouselInstaOwl)
 
 Source :
-
 [OWL](http://owlgraphic.com/owlcarousel/)
 [Instafeed](http://instafeedjs.com/)
     
 
-le code du plugin makeCarouselInstaOwl():
+Et voici le code du plugin makeCarouselInstaOwl():
 
 
 ```javascript
@@ -72,7 +69,7 @@ le code du plugin makeCarouselInstaOwl():
     //plugin
     $.fn.makeCarouselInstaOwl = function(){
 
-    //
+    //gestion des erreurs
     if(!$.fn.owlCarousel )throw new Error('Warning, plugin owlCarousel() must be loaded for action "makeCarouselInstaOwl" .');
     if(!new Instafeed() )throw new Error('Warning, plugin instafeed.js must be loaded for action "makeCarouselInstaOwl" .');
 
@@ -98,7 +95,6 @@ le code du plugin makeCarouselInstaOwl():
      */
     
     after: function () {
-    
     //Set up Owl carousel       
                            $carousel.owlCarousel({
                               loop:true,
@@ -110,8 +106,8 @@ le code du plugin makeCarouselInstaOwl():
                            itemsDesktopSmall : [979,3] 
                            });
                
-                /* Custom Navigation Events pour plus de possibilitees, 
-                debut de style avec css mais peut faire mieux
+                /* Custom Navigation Events pour plus de possibilitées, 
+                début de style avec css mais peut faire mieux
                 dans ce cas mettre dans parametres $carousel.owlCarousel({}); : navigation:false,
                 
                   $(".next").click(function(){
@@ -139,4 +135,3 @@ le code du plugin makeCarouselInstaOwl():
 
     }//end$
 '''
-
