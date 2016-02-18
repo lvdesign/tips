@@ -164,7 +164,9 @@ article footer{
 
 @media screen and (min-width:41em) {
     html{font-size: 85%;}
-    p{line-height: 1.9;}
+    
+    p, li {line-height: 1.9;}
+    
     p code, 
     p pre, 
     pre, 
