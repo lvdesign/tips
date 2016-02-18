@@ -26,6 +26,6 @@ Pour un site moderne et dynamique :
 *    Utilisation de l'[api Vimeo](https://developer.vimeo.com/) pour la diffusion et la sélection de la vidéo
 
 
-La rédaction des articles et leurs mises à jours se réalisent simplement. Pas besoin de base de donnée, GitHub est un bon complément.
+La rédaction des articles et leurs mises à jours se réalisent simplement. Pas besoin de base de données, GitHub est un bon complément.
 
 le site [companyTest](http://lvdesign.github.io/companyTest/) en ligne permet de visualiser ce principe.
