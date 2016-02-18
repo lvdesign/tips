@@ -1,5 +1,4 @@
 /*resetlv*/
-
 *{
 	margin: 0;
 	padding: 0;
@@ -32,10 +31,6 @@
     width: 1px;
 }
 
-ol,ul{
-	list-style: none;
-}
-
 
 html {
   box-sizing: border-box;
@@ -52,9 +47,6 @@ html {
     *zoom: 1;
 }
 
-img, video, embed, figcaption{
-	max-width: 100%;
-}
 
 ::-moz-selection {
     background: black;
@@ -66,4 +58,11 @@ img, video, embed, figcaption{
     background:black;
     color: white;
     text-shadow: none;
+}
+html{
+font-size: 100%;
+	line-height: 1;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }

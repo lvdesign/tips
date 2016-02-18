@@ -19,7 +19,9 @@ published: true
 
 
 Voici un petit gadget (plugin basic) pour animer votre site en quelques clics, si vous avez un compte Instagram!
+
 J'ai réalisé ce principe sous la forme d'un plugin basic en jQuery.
+
 Vous trouverez aussi la version de base, mais je pense que la construction en plugin est plus facile à implementer.
 Vous sélectionnez une photo sur votre compte instagram et vous lui donnez un hashtag bien spécifique, le tour est joué. 
 Ce carousel est modulable avec les paramètres de la librairie instafeed et aussi son aspect avec owl.js. A vous de jouer…
@@ -39,9 +41,9 @@ Source :
 
 Et voici le code du plugin makeCarouselInstaOwl():
 
-```
-javascript
-
+~~~javascript
+   
+       
     Don't forget to document your plugin! 
     Include any assumptions that your plugin is making.
     version 1.0
@@ -52,19 +54,20 @@ javascript
     $('.owl-slider').makeCarouselInstaOwl();
 
     besoin de :
-    # plugins parents : 
+    * plugins parents : 
     owl.js version 1 
     instafeed.js
 
-    # parametrer vos variables pour: 
+    * parametrer vos variables pour: 
     -> instafeed.js
     https://github.com/stevenschobert/instafeed.js#advanced-options
 
     -> Owl.js  v1.3.2
     http://owlgraphic.com/owlcarousel/
-    */
+   
+   
 
-    /*chargement des styles du carousel Owl v1 et specifique */
+    //chargement des styles du carousel Owl v1 et specifique
     $(document.head).append('<link rel="stylesheet" href="lv-carousel-v1/owl-v1/lv-carousel.css">');
 
 
@@ -75,23 +78,23 @@ javascript
     if(!$.fn.owlCarousel )throw new Error('Warning, plugin owlCarousel() must be loaded for action "makeCarouselInstaOwl" .');
     if(!new Instafeed() )throw new Error('Warning, plugin instafeed.js must be loaded for action "makeCarouselInstaOwl" .');
 
-    var $carousel = this; //
-
-
-
+    var $carousel = this;
+    
     //Set up instafeed
+     
      var feed = new Instafeed({
  
-     clientId: '97ae5f4c024c4a91804f959f43f2635f', /* votre clientID */
+     clientId: '97ae5f4c024c4a91804f959f43f2635f', // votre clientID
      target: 'instafeed',
      get: 'tagged',
-     tagName: 'cat', /* votre hashtag reference*/
+     tagName: 'cat', //votre hashtag reference
      links: true,
      limit: 25,
      sortBy: 'most-recent',
      resolution: 'standard_resolution',
      
-     /* pleins d'autres options voir notice
+     /* 
+     pleins d'autres options voir notice :
      https://github.com/stevenschobert/instafeed.js
      https://github.com/stevenschobert/instafeed.js#advanced-options
      */
@@ -136,4 +139,4 @@ javascript
     feed.run();
 
     }//end$
-'''
+~~~

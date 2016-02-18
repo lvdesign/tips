@@ -10,19 +10,19 @@ posts-attribution-link: http://lvdesign.com.fr
 comments : true
 ---
 
-#Pourquoi un mot de passe devrait être illisible ? 
+# Pourquoi un mot de passe devrait être illisible ? 
 
 Ok, un mot de passe est toujours une somme de points car il doit être protégé. C'est tout à fait normal.
 Mais vous avez peut être parfois un doute en remplissant le champs du mot de passe. 
 Et alors, une petite phrase assassine vous dit _"Votre mot de passe n'est pas valide"_. 
 Et oui, où est l'erreur ? est-ce le mauvais password ou bien vous vous êtes emmêlé les doigts sur votre clavier.
 
-Alors pour les utilisateurs de votre site, je vous propose une solution aperçu sur le net [http://huffduffer.com/signup/] (le sign-up de huffduffer de Jeremy Keith.). Elle va simplifier la vie.
+Alors pour les utilisateurs de votre site, je vous propose une solution aperçu sur le net [le sign-up de huffduffer de Jeremy Keith](http://huffduffer.com/signup/)qui va simplifier la vie.
 
 Tout d'abord un formulaire. Vous voyez qu'il est basique. Rien n'indique que vous allez rendre lisible le champs "password", il est bien de type="password". Ce sera bien des points noirs qui rempliront le champs mais si javascript est désactivé, le formulaire restera tout simplement
 sous cette forme.
 
-######-> script testé avec Safari, FF, Opera, Google Chrome.
+###### -> script testé avec Safari, FF, Opera, Google Chrome.
 
 Voici le formulaire et l'on peut voir le resultat :
 
@@ -34,7 +34,7 @@ Le script utilise la librairie jQuery pour créer à la volée la transformation
 de votre champs de type="password " au type="text".
 
 
-<pre>
+~~~javascript
 jQuery(function($) {
     $('input:password').each(function() {
         var psw_field = this;
@@ -57,17 +57,18 @@ jQuery(function($) {
         });
     });
 });
-</pre>
+~~~
 
 
 
-##Ma version en DOM-Javascript
+## Ma version en DOM-Javascript
 Le script utilise seulement le dom et javascript pour créer à la volée la transformation 
-de votre champs de type="password " au type="text". 
-C'est pratique car vous n'êtes pas obliger d'utilisez une Librairie ou même Jquery.
+de votre champs de type="password " en type="text". 
+C'est pratique car vous n'êtes pas obligé d'utiliser une librairie complète.
 
-<pre>
-//chargement script
+~~~javascript
+
+// Chargement des scripts
 function addLoadEvent(func) {
     var oldonload = window.onload;
     if (typeof window.onload != 'function') {
@@ -80,7 +81,7 @@ function addLoadEvent(func) {
     }
 }
 
-//methode InserAfter node
+// Méthode InserAfter node
 function insertAfter(newElement, targetElement) {
     var parent = targetElement.parentNode;
     if (parent.lastChild == targetElement) {
@@ -128,7 +129,7 @@ function prepareInputTextField() {
     } //endprepareInputField
 
 addLoadEvent(prepareInputTextField);
-</pre>
+~~~
 
 
 
