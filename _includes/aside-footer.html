@@ -1,0 +1,29 @@
+<aside class="aside-single-post">
+ <h6 id="post-slide">Recents posts</h6>
+	    <ul class="post-news">
+	    <!--travailler avec date -->
+	    {% for post in site.posts | limit: 4 %}
+	    	
+	    	<li><a href="{{ post.url | prepend: site.baseurl }}" rel="bookmark" >{{ post.title }}
+	    	<span class="post-meta hide">{{ post.date | date: "%b %-d, %Y" }}</span></a> |
+	    	 </li> 
+	    	 
+	   {% endfor %}
+	    </ul>
+<!--http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html-->
+ <h6 id="tag-slide">Recherche par Tags</h6>
+ {% for tag in site.tags %}
+ 	{% assign t = tag | first %}
+ 		{% assign posts = tag | last %}
+ 		<p class="zero">{{ t | downcase }}</p>
+	    <ul class="tags tag-news">
+	   {% for post in posts %}
+	     {% if post.tags contains t %}
+	     <li class="tags-li"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	       <span class="date hidden">{{ post.date | date: "%B %-d, %Y"  }}</span>
+	     </li>
+	     {% endif %}
+	   {% endfor %}
+	   </ul>
+ {% endfor %} 
+ </aside>	

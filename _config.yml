@@ -10,6 +10,17 @@ github_username:  lvdesign
 markdown: kramdown
 highlighter: rouge
 
+jekyll-archives:
+  enabled: []
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    
+    
+    
 exclude: [
   .git,
   .gitignore,

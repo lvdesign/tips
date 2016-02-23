@@ -3,6 +3,7 @@ layout: post
 title: "un mot de passe ?"
 date:   2015-03-08 09:30:13
 categories: web
+tag : js
 
 image: http://www.lvdesign.com.fr/blog/inews/lv-password-reader.png
 posts-attribution: LVdesign
@@ -133,8 +134,9 @@ addLoadEvent(prepareInputTextField);
 
 
 
-###### Et voila, a vous de choisir.
-[exemple](https://github.com/lvdesign/mot-de-passe.git)
+###### Et voila, à vous de choisir.
+[exemples :](https://github.com/lvdesign/mot-de-passe.git)
+
 les fichiers : 
     
 * password-lisible-demo-jQuery.html, la version de J. Keith

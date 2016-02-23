@@ -4,6 +4,7 @@ title: site template pour Company Name
 date: 2016-02-18 12:20:02
 
 categories: web
+tag: template
 "posts-attribution": LVdesign
 "posts-attribution-link": "http://lvdesign.com.fr"
 comments: true

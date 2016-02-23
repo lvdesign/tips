@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 	    	},
       
 	        files: {
-	          'js/site.min.js' : ['_j/vendor/jquery-1.11.2.min.js', 'j/*.js']
+	          'js/site.min.js' : ['_j/main.js']
 	        }
       	}
     },
@@ -55,11 +55,11 @@ module.exports = function(grunt) {
         //livereload: true,
       },
       site: {
-        files: ["index.md", "about.md", "_layouts/*.html", "_posts/*.md", "_includes/*.html", "feed.xml"],
+        files: ["index.md",  "_layouts/*.html", "_posts/*.md", "_includes/*.html", "feed.xml", "archive/*.md", "about/*.md"],
         tasks: ["shell:jekyllBuild"]
       },
       js: {
-        files: ["js/vendor/jquery-1.11.2.min.js"],
+        files: ["js/site.min.js"],
         tasks: ["uglify", "shell:jekyllBuild"]
       },
       css: {

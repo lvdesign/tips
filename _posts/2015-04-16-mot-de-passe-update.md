@@ -3,6 +3,7 @@ layout: post
 title: "un mot de passe, revisite ?"
 date:  2015-04-16 09:30:13
 categories: web
+tag : pratique
 
 image: http://www.lvdesign.com.fr/blog/inews/read-password-v2.png
 posts-attribution: LVdesign

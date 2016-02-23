@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<section class="page clearfix">
+	
+	<h1 class="h1-static-page">Mes archives</h1>
+
+		<nav >
+		<a href="#allposts" class="marge-right upperC">All posts</a>
+		{% for tag in site.tags %}
+		<a href="#{{ tag | first | remove: '' }}" class="marge-right upperC">{{ tag | first }}</a>
+			{% if forloop.last %}
+				{% else %}
+			{% endif %}
+		{% endfor %}
+		</nav>
+ 	
+ 	<article class="single-post">
+ 	
+ 	<div class="catbloc" id="allposts">
+	 	 <h2>All posts</h2>
+		 	 <ul>
+		 	{% for post in site.posts %}
+		 	 <li><a href="{{site.baseurl }}{{ post.url }}">
+		 	 <time class="datetime marge-right">{{ post.date | date: "%-d %B %Y" }}</time>{{ post.title }}</a>
+		 	</li>
+		 	{% endfor %}
+		 	</ul>
+ 	</div>
+			{% for tag in site.tags %}
+			 <div class="catbloc" id="{{ tag | first | remove:' ' }}">
+			 <h2>{{ tag | first }}</h2>
+			        
+			         <ul>
+			            {% for posts in tag %}
+			              {% for post in posts %}
+			              	{% if post.url %}
+			                 <li>
+			                 <a href="{{site.baseurl }}{{ post.url }}">
+			                     <time class="datetime marge-right">{{ post.date | date: "%-d %B %Y" }}</time>
+			                     {{ post.title }}
+			                   </a>
+			                </li>
+			                {% endif %}
+			             {% endfor %}
+			           {% endfor %}
+			        </ul>
+			    </div>
+			{% endfor %}
+</article>
+
+	
+</section>

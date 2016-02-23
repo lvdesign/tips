@@ -3,26 +3,26 @@ layout: post
 title: "Build easy form with php"
 date:  2015-08-07 09:30:13
 categories: web
-
+tag : php
 
 posts-attribution: LVdesign
 posts-attribution-link: http://lvdesign.com.fr
 ---
 
 
-#Creer et gerer facilement des formulaires en .php
+# Créer et gérer facilement des formulaires en .php
 
-Pour une rapide mise en forme de formulaire et pour recuperer facilement les donnees, 
+Pour une rapide mise en forme de formulaire et pour récuperer facilement les données, 
 
-voici deux petites functions pratique, bootsrapiser pour ceux qui aime.
+voici deux petites fonctions pratiques, "bootsratiser" pour ceux qui aime.
 
-La base de cette function est issue du livre de Larry Ullman "effortless E-commerce". 
+La base de cette fonction est issue du livre de [Larry Ullman](http://www.larryullman.com/) "effortless E-commerce". 
 
-Je l'ai un petit peu accessoirise et j'ai realise la seconde pour me faciliter
+Je l'ai un petit peu accessoirisé et j'ai realisé la seconde partie pour me faciliter
  
-la recuperation de donnees pour les pages Update du site recettesoriginales.fr.
+la récuperation de données pour les pages Update du site [recettesoriginales.fr](http://www.recettesoriginales.fr).
 
-Voila, cela peut toujours etre utile. 
+Voilà, cela peut toujours être utile. 
 
 
 Pour tester en live voici le lien :
@@ -33,7 +33,7 @@ Pour tester en live voici le lien :
     *  function create_form_input();
     *  function make_Text_Input();
 
-```php
+    ~~~php
 
     function create_form_input($name, $type, $label='', $errors=array(), $options=array() ){
 	$value = false;
@@ -78,7 +78,7 @@ Pour tester en live voici le lien :
 	echo '</div>';
     }//funct	
 
-    //retrouver les donnees
+    //retrouver les données
     function make_Text_Input($name, $type, $label='', $value, $errors =array(), $options= array() ){
 
     if(isset($_GET[$name])) $value = $_GET[$name];
@@ -120,5 +120,6 @@ Pour tester en live voici le lien :
 		}//endIF
     echo '</div>';
     }//funct
-'''
+    
+    ~~~
 
