@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Un nouveau logo pour Jekyll
-date: 2016-02-18 12:20:02
-
+date: 2016-03-30 12:20:02
 categories: web
 tag: Logo
 "posts-attribution": LVdesign
@@ -16,8 +15,9 @@ published: true
 
 A la suite de la proposition de Marianoviola, j'ai aussi eu envie de faire une proposition mais dans une autre direction…
 
-![new logo pour Jekyll ]({{ site.baseurl }}/images/jekyll.jpg "a new logo to Jekyll ?")
+![new logo pour Jekyll ]({{ site.baseurl }}/images/jekyll_propLV.png "a new logo to Jekyll ?")
 
+Font : PMN Caecilia LT, 76 Bold Italic.
 
 
 
