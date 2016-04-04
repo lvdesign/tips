@@ -15,7 +15,7 @@ published: true
 
 A la suite de la proposition de Marianoviola, j'ai aussi eu envie de faire une proposition mais dans une autre direction…
 
-![new logo pour Jekyll ]({{ site.baseurl }}/images/jekyll_propLV.png "a new logo to Jekyll ?")
+![new logo pour Jekyll ]({{ site.baseurl }}/images/Jekyll-logo.png "a new logo to Jekyll ?")
 
 Font : PMN Caecilia LT, 76 Bold Italic.
 
