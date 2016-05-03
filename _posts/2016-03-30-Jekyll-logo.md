@@ -3,7 +3,7 @@ layout: post
 title: Un nouveau logo pour Jekyll
 date: 2016-03-30 12:20:02
 categories: web
-tag: Logo
+tag: [Logo, jekyll]
 "posts-attribution": LVdesign
 "posts-attribution-link": "http://lvdesign.com.fr"
 comments: true
