@@ -50,10 +50,13 @@ module.exports = function(grunt) {
     },
 
     watch: {
+   
       options: {
-        //debounceDelay: 1000,
-        //livereload: true,
+        debounceDelay: 1000,
+        livereload: true,
       },
+     
+      
       site: {
         files: ["index.md",  "_layouts/*.html", "_posts/*.md", "_includes/*.html", "feed.xml", "archive/*.md", "about/*.md"],
         tasks: ["shell:jekyllBuild"]
@@ -70,6 +73,29 @@ module.exports = function(grunt) {
         files: ["svg/*.svg"],
         tasks: ["svgstore", "shell:jekyllBuild"]
       }
+    },
+    
+    connect:{
+        options: {
+                    port: 9000,
+                    // Change this to '0.0.0.0' to access the server from outside.
+                    hostname: 'localhost',
+                    livereload: 35729
+                },
+    
+                dist: {
+                    options: {
+                        open: true,
+                        base: {
+                            path: 'site',
+                            options: {
+                                index: 'index.html',
+                                maxAge: 300000
+                            }
+                        }
+                    }
+                }
+    
     },
 
     svgstore: {
@@ -89,13 +115,12 @@ module.exports = function(grunt) {
 
   });
 
-  require("load-grunt-tasks")(grunt);
+require("load-grunt-tasks")(grunt);
 
 
+grunt.registerTask("serve", ["shell:jekyllServe"] );
 
-
-  grunt.registerTask("serve", ["shell:jekyllServe"]);
-  grunt.registerTask("default", ["sass", "autoprefixer", "uglify", "svgstore", "shell:jekyllBuild", "watch"]);
+grunt.registerTask("default", ["sass", "autoprefixer", "uglify", "svgstore", "shell:jekyllBuild", "watch"]);
 
 
 grunt.event.on('watch', function(action, filepath, target) {

@@ -23,7 +23,7 @@ C’est évidement un principe mais il serait facile de créer si besoin une aut
 
 extrait du code :
 
-	~~~php
+~~~
 	
 	//photo en paysage
  	if($width >= $height){
@@ -58,7 +58,7 @@ extrait du code :
 	}
 	}
 	
-	~~~
+~~~
 
 Pour mon site recettesoriginales.fr, la fonction est pour plus de commodité insérée après avoir vérifié le format de l’image, sa taille, etc.
 Elle supporte la réécriture selon le format chargé.

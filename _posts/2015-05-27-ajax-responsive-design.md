@@ -35,7 +35,7 @@ La page exemple sur mon site -> http://www.lvdesign.com.fr/clients/bien-dans-ma-
 
 le code : 
 
-    ~~~javascript
+~~~
     //window.onload = prepareLinks;
     function addLoadEvent(func) {
     var oldonload = window.onload;
@@ -116,18 +116,18 @@ le code :
     }
 
     addLoadEvent(prepareLinks);
-    ~~~
+~~~
 
 Pour le html, voici la structure :
 
 
-    ~~~javascript
+~~~
     
     <p class="p-button" id="person" >
     <a href="detail/detailsRecettesOriginales.html"  title="details du projet"  class="plus-details" >Plus de details en images</a></p>
     <article class="group portfolios acenter data-plus" id="details"></article>
     
-    ~~~
+~~~
 
 
 
@@ -138,15 +138,15 @@ La page exemple sur mon site -> http://www.lvdesign.com.fr/clients/regal.php
 La structure html :
  
 
-    ~~~javascript
+~~~ 
     <!--jQueryAjax-->
     <p class="p-button" id="target"><a href="detail/details-regal.html" title="details du projet"  class="plus-details" >Plus de details en images</a></p>							
     <article class="group portfolios acenter action-jq" ></article>
-    ~~~
+~~~
 
 le code :
 
-    ~~~javascript
+~~~ 
     $(document).ready(function(){
     //ajax methode
     $('#target a').click( function(){
@@ -158,7 +158,7 @@ le code :
     return false;
     });
     });
-    ~~~
+~~~
 
 #### La troisième avec cette bibliothèque légère et avec une syntaxe responsable utilisant et manipulant les attributs de data du html5. 
 
@@ -168,24 +168,22 @@ La page exemple sur mon site -> http://www.lvdesign.com.fr/clients/recettes-orig
 La structure Html :
 
 
-    ~~~javascript
-    <!--ajaxInclude
-     RRD de Scott Jehl http://filamentgroup.com/lab/ajax_includes_modular_content/
+~~~
+    <!--ajaxInclude  RRD de Scott Jehl http://filamentgroup.com/lab/ajax_includes_modular_content/
      -->			   										
 	<p class="p-button"><a href="detail/details-azzaro.html" data-after data-interaction class="plus-details" >Plus de details </a><p>
-    ~~~
+~~~
 
 -> il faut donc : la librairie jQuery, ajaxInclude.js, ajaxInclude-lv.js
 
 le code :
 
-    ~~~javascript
-    
+~~~    
     $("[data-append],[data-replace],[data-after],[data-before]").ajaxInclude();
     $( "a[data-interaction]" ).bind( "click", function() {
     $( this ).removeAttr( "data-interaction" ).ajaxInclude();
     return false;
     });
     
-    ~~~
+~~~
 

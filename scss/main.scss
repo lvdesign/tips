@@ -1,10 +1,15 @@
-/*v2*/
+/*v3-2017*/
 
 
 @import "resetlv.scss";
 
-@import url(http://fonts.googleapis.com/css?family=Indie+Flower|Cinzel:400,700|VT323);
 
+$color-main: black;
+
+$font-main: 'Playfair Display SC', Georgia, serif;
+$font-txt: Georgia, serif;
+$font-sans: Arial, sans-serif;
+$font-accent: "cooper-black-std", Georgia, serif;
 
 html{
 	text-align: center;
@@ -23,6 +28,7 @@ html{
 }
 
 /*navigation*/
+
 .nav-principal{
 margin:0;
 padding: 0;
@@ -33,7 +39,8 @@ margin: 0;
 padding: .5em .8em;
 }
 
-p img, img{
+p img, 
+img{
 max-width:100%;
 margin:1em 0;
 }
@@ -44,35 +51,43 @@ a:link, a:visited{
 color: #ccc;
 text-decoration: none;
 }
-a:hover, a:focus, a.focus, a.active{
+a:hover, 
+a:focus, 
+a.focus, 
+a.active{
 color: gray;
 text-decoration: underline;
 }
 
-/*typographie*/
+/*TYPOGRAPHIE*/
+h1, 
+h2{
+font-family: $font-main ;}
 
-/* TYPE FACE
-TypeKit:::
-font-family: "good-kitty",cursive;
-font-style: normal;
-font-weight: 400;
-*/
-
-h1, h2{font-family: 'Cinzel', georgia, serif;}
-
-h3, h4{
-font-family: "cooper-black-std", arial, sans-serif;
+h3,
+h4{
+font-family: $font-main;
 font-weight: 400;
 }
 
-p, li{
-	font-family:  "adelle", georgia, serif;
-	font-style: normal;
-	font-weight: 200;
-	letter-spacing: 1px;}
+p, 
+li{
+font-family:  $font-txt;
+font-style: normal;
+font-weight: 200;
+letter-spacing: 1px;}
 
-p pre, p code, pre, code{ font-family: 'VT323', monospace;}
+p pre, 
+p code, 
+pre, 
+code{
+font-family: $font-sans;}
 
+p h6, 
+h6{
+	font-family: $font-accent;
+	font-weight: 400;
+}
 
 h1{
 	font-size: 20px;
@@ -89,35 +104,45 @@ h2{
 
 h3, h4{
 font-size: 16px;
-font-size: 1.6rem;}
+font-size: 1.6rem;
+margin:1.2em 0 .6em 0;
+}
 
-p h5, h5{font-style: italic;}
+p h5, 
+h5{font-style: italic;}
 
-p h6, h6{
-	font-family: "cooper-black-std", Arial, sans-serif;
-	font-weight: 400;
+p, p h5, h5, p h6, h6,ol, ul, li,
+{
 	font-size: 16px;
-	font-size: 1.6rem;}
+	font-size: 1.6rem;
+	font-weight: normal;}
 
 p{line-height: 1.7;}
 
-p, p h5, h5, ol, ul, li{
-	font-size: 16px;
-	font-size: 1.6rem;
-	font-weight: normal;
-}
 .text{ font-size: small;}
 
-p code, 
+p code,
 p pre, 
-pre, 
-code { 
-white-space: pre-wrap; text-align: left; margin: 1em 0;
-font-size: 12px;
-font-size: 1.4rem;
+pre,code{ 
+white-space: pre-wrap; 
+text-align: left; 
+margin: 1em 0;
+font-size: 10px;
+font-size: 1.1rem;
 }
 
-.form-test, .form-test *, .form-test ul > li 
+.highlighter-rouge{
+background:#eee; padding:1em;
+-moz-box-shadow: inset 2px 2px 6px 1px #656565;
+-webkit-box-shadow: inset 2px 2px 6px 1px #656565;
+-o-box-shadow: inset 2px 2px 6px 1px #656565;
+box-shadow: inset 2px 2px 6px 1px #656565;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=6);
+}
+
+.form-test, 
+.form-test *, 
+.form-test ul > li 
 {
 	margin: 0;
 	padding: 0;
@@ -127,6 +152,14 @@ font-size: 1.4rem;
 
 .retour-force{
 	display: block;
+}
+
+.rss-subscribe{
+border-top:1px solid black;
+}
+
+.username{
+font-size:small;
 }
 
 /*POST*/
@@ -151,15 +184,21 @@ article footer{
 }
 
 /*fancy icon*/
+
 .icon-github,
 .icon-twitter,
-.github-icon-svg,
-.twitter-icon-svg {
+.icon-instagram {
+  
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 1em;
+  height: 1em;
   position: relative;
   top: 3px;
+}
+.icon{
+width:1em;
+height:1em;
+
 }
 
 /*Archive 

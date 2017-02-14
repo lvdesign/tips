@@ -26,9 +26,14 @@ Voici un petit gadget (un plugin basic !) pour animer votre site en quelques cli
 
 J'ai réalisé ce principe sous la forme d'un plugin en jQuery.
 
-Vous trouverez aussi la version de base, mais je pense que la construction en plugin est plus facile à implementer.
+Vous trouverez aussi la version de base, mais je pense que la construction en plugin est plus facile à implémenter.
 
-Vous sélectionnez une photo sur votre compte instagram. Vous lui attribuée un hashtag spécifique qui servira de lien vers votre carousel, le tour est joué. 
+Attention, depuis fin 2016, Instagram a limité la distribution de nos images.
+Suivez la méthode de [Grafikart](https://www.grafikart.fr/tutoriels/php/instagram-api-515), c'est une bonne base pour gérer mon plugin.
+
+Vous sélectionnez une photo sur votre compte instagram. Et non ce n'est plus possible, toutes les photos seront visible…
+Vous lui attribuez un hashtag spécifique qui servira de lien vers votre carousel, le tour est joué. 
+
 Ce carousel est modulable avec les paramètres de la librairie instafeed et aussi son aspect avec owl.js. A vous de jouer…
 Et surtout merci à ces développeurs Bartosz Wojciechowski et Stevens Chobert, sans eux, j'aurais du recréer une sacrée roue.
 
@@ -46,8 +51,7 @@ Source :
 
 Et voici le code du plugin makeCarouselInstaOwl():
 
-    ~~~javascript
-   
+~~~   
        
     Don't forget to document your plugin! et oui!
     Include any assumptions that your plugin is making.
@@ -87,9 +91,9 @@ Et voici le code du plugin makeCarouselInstaOwl():
      
      var feed = new Instafeed({
  
-    clientId: '97ae5f4c024c4a91804f959f43f2635f', // votre clientID
+    clientId: '97ae122024c4a91804f959f43f2635f', // votre clientID
     target: 'instafeed',
-    get: 'tagged',
+    get: 'user', // depuis fin 2016 utilisez 'user'
     tagName: 'cat', //votre hashtag reference
     links: true,
     limit: 25,
@@ -142,4 +146,4 @@ Et voici le code du plugin makeCarouselInstaOwl():
 
     }//end function$
     
-    ~~~
+~~~

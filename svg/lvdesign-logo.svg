@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="300.6px" height="300.6px" viewBox="0 0 300.6 300.6" enable-background="new 0 0 300.6 300.6"
+	 xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="16383" width="16383" x="-7791.5" y="-7891.5" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="Calque_1">
+	<path d="M300.3,288.9c0,6.6-5.4,12-12,12h-276c-6.6,0-12-5.4-12-12v-276c0-6.6,5.4-12,12-12h276c6.6,0,12,5.4,12,12V288.9z"/>
+</g>
+<g id="Calque_2">
+	<text transform="matrix(1 0 0 1 91.8892 203.3516)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Folio-BoldCondensed'" font-size="172" letter-spacing="-17">L</tspan><tspan x="43.5" y="0" fill="#FFFFFF" font-family="'Folio-BoldCondensed'" font-size="172" letter-spacing="-9">V</tspan></text>
+	<text transform="matrix(1 0 0 1 39.5889 207.6904)" fill="#FFFFFF" font-family="'UniversLT-Light'" font-size="217.0048">[</text>
+	<text transform="matrix(1 0 0 1 209.5889 206.6904)" fill="#FFFFFF" font-family="'UniversLT-Light'" font-size="217.0048">}</text>
+</g>
+</svg>

@@ -35,7 +35,7 @@ Le script utilise la librairie jQuery pour créer à la volée la transformation
 de votre champs de type="password " au type="text".
 
 
-~~~javascript
+~~~
 jQuery(function($) {
     $('input:password').each(function() {
         var psw_field = this;
@@ -67,7 +67,7 @@ Le script utilise seulement le dom et javascript pour créer à la volée la tra
 de votre champs de type="password " en type="text". 
 C'est pratique car vous n'êtes pas obligé d'utiliser une librairie complète.
 
-~~~javascript
+~~~
 
 // Chargement des scripts
 function addLoadEvent(func) {

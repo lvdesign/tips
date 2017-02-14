@@ -16,6 +16,9 @@
              
              <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" /
               <script src="{{ site.baseurl }}/j_base/vendor/modernizr-2.8.3.min.js"></script>
+             <style>
+             @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+             </style>
               <script>
                 (function(d) {
                   var config = {
@@ -33,6 +36,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        {% include svg-defs.svg %}
          <header>
         	 <h1><a href="{{ site.baseurl }}/"><span class="retour-force"><img src="{{ site.baseurl }}/images/lvdesign.png" alt="{{site.name}}" /></span>{{site.name}}</a></h1>
         	 <nav>

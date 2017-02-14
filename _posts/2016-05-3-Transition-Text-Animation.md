@@ -30,7 +30,7 @@ La librairie rentre en action et après une pause avec un timbre la transition s
 
 Je vous propose cette solution en plugin jQuery : $().makeLoaderLettering(); 
 
-    ~~~javascript
+~~~
     
     /*
     Plugin loader-lettering
@@ -85,7 +85,7 @@ Je vous propose cette solution en plugin jQuery : $().makeLoaderLettering();
     setTimeout(function() {$('body').addClass('loaded');}, 6000);   // temps avant transition
     };
 
-    ~~~
+~~~
     
 Je vous propose aussi une solution pour [Jekyll 'le blog-aware'. ](http://lvdesign.github.io/siteBMW/)
 

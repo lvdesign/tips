@@ -29,7 +29,7 @@ Voir les fichiers sur mon espace Github LVdesign .
 [les fichiers exemples :](https://github.com/lvdesign/mot-de-passe.git)
  
 
-*    password-lisible-demo-jQuery.html, la version de J. Keith
-*    password-lisible-demo-jQuery-V2.html (new method)
-*    password-lisible-demo-js.html, ma version light en js. 
-*    password-lisible-demo-js-V2.html (new method)
+* password-lisible-demo-jQuery.html, la version de J. Keith
+* password-lisible-demo-jQuery-V2.html (new method)
+* password-lisible-demo-js.html, ma version light en js. 
+* password-lisible-demo-js-V2.html (new method)

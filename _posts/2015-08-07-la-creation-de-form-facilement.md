@@ -30,10 +30,10 @@ Pour tester en live voici le lien :
 [la page test](http://www.lvdesign.com.fr/form-php/)
 [les fichiers du test ](https://github.com/lvdesign/form-php.git)
 
-    *  function create_form_input();
-    *  function make_Text_Input();
+    * function create_form_input();
+    * function make_Text_Input();
 
-    ~~~php
+~~~
 
     function create_form_input($name, $type, $label='', $errors=array(), $options=array() ){
 	$value = false;
@@ -121,5 +121,5 @@ Pour tester en live voici le lien :
     echo '</div>';
     }//funct
     
-    ~~~
+ ~~~
 
