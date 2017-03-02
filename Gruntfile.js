@@ -3,10 +3,15 @@
 module.exports = function(grunt) {
 
   "use strict";
+  
+  require("load-grunt-tasks")(grunt);
+  
+
 
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
 
+//parser,minify,compress js
     uglify: {
     	global: {
 	    	options:{
@@ -19,7 +24,7 @@ module.exports = function(grunt) {
 	        }
       	}
     },
-
+//prepro css
     sass: {
       global: {
         options: {
@@ -30,75 +35,26 @@ module.exports = function(grunt) {
         }
       }
     },
-
+//autoprefix
     autoprefixer: {
       global: {
         src: "css/global-unprefixed.css",
         dest: "css/global.css"
       }
     },
-
+//command 
     shell: {
+     jekyllBuild: {
+        //command: "jekyll build --config _config-dev.yml"
+        command: "jekyll build --watch"
+      },
       jekyllServe: {
         //command: "jekyll serve --baseurl URL"
-        command: "jekyll serve --baseurl"
+        command: "jekyll serve"
       },
-      jekyllBuild: {
-        //command: "jekyll build --config _config-dev.yml"
-        command: "jekyll build --config _config-dev.yml"
-      }
     },
 
-    watch: {
-   
-      options: {
-        debounceDelay: 1000,
-        livereload: true,
-      },
-     
-      
-      site: {
-        files: ["index.md",  "_layouts/*.html", "_posts/*.md", "_includes/*.html", "feed.xml", "archive/*.md", "about/*.md"],
-        tasks: ["shell:jekyllBuild"]
-      },
-      js: {
-        files: ["js/site.min.js"],
-        tasks: ["uglify", "shell:jekyllBuild"]
-      },
-      css: {
-        files: ["scss/*.scss"],
-        tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
-      },
-      svgIcons: {
-        files: ["svg/*.svg"],
-        tasks: ["svgstore", "shell:jekyllBuild"]
-      }
-    },
-    
-    connect:{
-        options: {
-                    port: 9000,
-                    // Change this to '0.0.0.0' to access the server from outside.
-                    hostname: 'localhost',
-                    livereload: 35729
-                },
-    
-                dist: {
-                    options: {
-                        open: true,
-                        base: {
-                            path: 'site',
-                            options: {
-                                index: 'index.html',
-                                maxAge: 300000
-                            }
-                        }
-                    }
-                }
-    
-    },
-
-    svgstore: {
+      svgstore: {
       options: {
         prefix : "shape-",
         cleanup: false,
@@ -111,16 +67,77 @@ module.exports = function(grunt) {
           "_includes/svg-defs.svg": ["svg/*.svg"]
         }
       }
-    }
+    },
+
+watch: {
+
+   options: {
+     base: '_site/',
+     livereload: {
+         host: '127.0.0.1',
+         port: 4000
+       }
+         
+   },
+  
+   site: {
+     files: ["index.md",  "_layouts/*.html", "_posts/*.md", "_includes/*.html", "feed.xml", "archive/*.md", "about/*.md"],
+     tasks: ["shell:jekyllBuild"]
+   },
+   
+   js: {
+     files: ["js/site.min.js"],
+     tasks: ["uglify", "shell:jekyllBuild"]
+   },
+   css: {
+     files: ["scss/*.scss"],
+     tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
+   },
+   svgIcons: {
+     files: ["svg/*.svg"],
+     tasks: ["svgstore", "shell:jekyllBuild"]
+   }
+   
+ },
+
+    
+   connect: {
+               options: {
+                   port: 4000,
+                   // Change this to '0.0.0.0' to access the server from outside.
+                   hostname: '127.0.0.1',
+                   livereload: 35729
+               },
+   
+               dist: {
+                   options: {
+                       open: true,
+                       base: {
+                           path: '_site/',
+                           options: {
+                               index: 'index.html',
+                               maxAge: 300000
+                           }
+                       }
+                   }
+               }
+           },
+    
 
   });
 
-require("load-grunt-tasks")(grunt);
+grunt.registerTask("build", [
+"sass", 
+"autoprefixer", 
+"uglify", 
+"svgstore", 
+"shell:jekyllBuild",
+"watch"
+]);
 
+grunt.registerTask('default', ['build']);
+grunt.registerTask("serve", ['shell:jekyllServe', 'connect:dist'] );
 
-grunt.registerTask("serve", ["shell:jekyllServe"] );
-
-grunt.registerTask("default", ["sass", "autoprefixer", "uglify", "svgstore", "shell:jekyllBuild", "watch"]);
 
 
 grunt.event.on('watch', function(action, filepath, target) {

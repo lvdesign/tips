@@ -1,20 +1,26 @@
 {
   "name": "tips-JekyllGrunt",
-  "version": "0.1.0",
+  "version": "0.1.2",
+  "private": true,
   "devDependencies": {
-    "grunt": "latest",
-    "grunt-autoprefixer": "~0.8.2",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "~3.0.4",
     "grunt-cli": "^1.2.0",
-    "grunt-contrib-concat": "latest",
-    "grunt-contrib-handlebars": "~0.7.0",
-    "grunt-contrib-sass": "~0.6.0",
-    "grunt-contrib-uglify": "~0.5.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-handlebars": "~1.0.0",
+    "grunt-contrib-sass": "~1.0.0",
+    "grunt-contrib-uglify": "~2.1.0",
     "grunt-contrib-watch": "~1.0.0",
-    "grunt-grunticon": "latest",
-    "phantomjs-prebuilt":"latest",
+    "grunt-grunticon": "^2.3.1",
     "grunt-jekyll": "~0.4.1",
-    "grunt-shell": "~0.6.4",
-    "grunt-svgstore": "~0.3.0",
-    "load-grunt-tasks": "~0.2.1"
+    "grunt-shell": "~2.1.0",
+    "grunt-svgstore": "~1.0.0",
+    "grunt-timer": "^0.6.0",
+    "jit-grunt": "^0.10.0",
+    "load-grunt-tasks": "~3.5.2",
+     "grunt-contrib-connect": "^1.0.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   }
 }

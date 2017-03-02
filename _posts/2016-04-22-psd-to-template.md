@@ -5,7 +5,7 @@ date: 2016-04-22 12:20:02
 categories: web
 tag: responsive_design
 "posts-attribution": LVdesign
-"posts-attribution-link": "http://lvdesign.com.fr"
+"posts-attribution-link": "http://www.lvdesign.com.fr"
 comments: true
 published: true
 ---
@@ -28,7 +28,7 @@ Ce template responsive design est composé de deux carrousels, un en image et l'
 
 Une petite animation avec des images par un Tabs pour des images et un autre pour des graphes.
 
-Voilà, à vous de découvrir cet exercice de style sur [mon site](http://lvdesign.com.fr/mooc_psd_html/index.html).
+Voilà, à vous de découvrir cet exercice de style sur [mon site](http://www.lvdesign.com.fr/mooc_psd_html/index.html).
 
 PS. Pour tout travaux de ce type, vous pouvez me contacter par mail.
 [source site de Blaz, blazrobar.com : ](http://blazrobar.com/free-psd-website-templates/take-a-free-mobile-app-landing-page-psd-template/)
