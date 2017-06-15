@@ -11,47 +11,27 @@
       
 
         <ul class="social-media-list">
-        {% if site.instagram_username %}
-        <li>
-        <a href="https://www.instagram.com/{{ site.github_username }}" >
-        <span class="icon icon-instagram">
-        <svg><use xlink:href="#shape-instagram" /></svg>
-        </span>
-        <span class="username">{{ site.instagram_username }}</span>
-        </li>
-        {% endif %}
-	          {% if site.github_username %}
-	          <li>
-	            <a href="https://github.com/{{ site.github_username }}">
-	              <span class="icon icon-github">
-	                <svg><use xlink:href="#shape-github" /></svg>
-	              </span>
-	
-	              <span class="username">{{ site.github_username }}</span>
-	            </a>
-	          </li>
-	          {% endif %}
-	
-	          {% if site.twitter_username %}
-	          <li>
-	            <a href="https://twitter.com/{{ site.twitter_username }}">
-	              <span class="icon icon-twitter">
-	               <svg><use xlink:href="#shape-twitter" />
-	              </span>
-	
-	              <span class="username">{{ site.twitter_username }}</span>
-	            </a>
-	          </li>
-	          {% endif %}
-	          <li>
-	           <a href="http://www.lvdesign.com.fr">
-	           <span class="icon icon-twitter">
-	            <svg><use xlink:href="#shape-lvdesign-logo" />
-	           </span>
-	           <span class="username">LVdesign.com.fr</span>
-	           </a>
-	           
-	          </li>
+					<li><a href="https://www.instagram.com/{{ site.instagram_username }}" >
+						<span>
+							<span class="username hidden">{{ site.instagram_username }}</span>
+        				<svg class="icon shape-instagram" ><use xlink:href="#shape-instagram" /></svg>
+						</span></a>
+					</li>
+
+					<li><a href="https://github.com/{{ site.github_username }}" >
+						<span>
+							<span class="username hidden">{{ site.github_username }}</span>
+        				<svg class="icon shape-github" ><use xlink:href="#shape-github" /></svg>
+						</span></a>
+					</li>
+
+					<li><a href="https://www.lvdesign.com.fr/" >
+						<span>
+							<span class="username hidden">{{ site.github_username }}</span>
+        				<svg class="icon shape-lvdesign-logo" ><use xlink:href="#shape-lvdesign-logo" /></svg>
+						</span></a>
+					</li>
+        
         </ul>
      <p class="text">{{ site.description }}</p>
    </footer>
