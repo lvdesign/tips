@@ -6,14 +6,27 @@ title: About
 
 Bonjour,
 
-je m'appelle Laurent vignaux et je developpe des sites.
+Je m'appelle Laurent vignaux et j'aime developper des sites.
 
-je vous propose ce site pour decouvrir des solutions pratiques et inventives.
+Je vous propose ce site pour découvrir avec moi des solutions pratiques et inventives.
 
-Github associe a Jekyll peut etre une solution adapte a votre communication.
+Github associé a Jekyll peut-être une solution adapté à votre communication.
 
-Suivez et voyez. 
+Suivez et voyez! 
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+
+
+
+_Hi,_
+
+_My name is Laurent Vignaux and I like to develop websites._
+
+_I propose you this site to discover with me practical and inventive solutions._
+
+_Github associated with Jekyll may be certainly a great solution adapted to your communication._
+
+_Follow and see!_
+
+My website : lvdesign.com.fr
 
 You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)

@@ -18,7 +18,7 @@
     "grunt-timer": "^0.6.0",
     "jit-grunt": "^0.10.0",
     "load-grunt-tasks": "~3.5.2",
-     "grunt-contrib-connect": "^1.0.2"
+    "grunt-contrib-connect": "^1.0.2"
   },
   "engines": {
     "node": ">=0.10.0"

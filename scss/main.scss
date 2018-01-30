@@ -182,21 +182,19 @@ article footer{
 }
 
 /*fancy icon*/
-
-.social-media-list li{ display: inline; padding:10px; width:50px;}
+.social-media-list{ display: inline;}
+.social-media-list li{ display: inline; padding:10px; }
 
 .shape-github,
 .shape-twitter,
 .shape-instagram,
-.shape-lvdesign {
-  
-  
-  width: 10px;
-  height: 10px;
-  top: 3px;
+.shape-lvdesign-svg-logo{
+	width: 150px;
+	height: 50px;
+	top: 3px;
 }
-.icon{
-}
+
+.icon{}
 
 /*Archive 
 http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html*/

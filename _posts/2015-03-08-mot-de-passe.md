@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "un mot de passe ?"
+title: Write your password easily.
 date:   2015-03-08 09:30:13
 categories: web
 tag : js
@@ -14,14 +14,13 @@ comments : true
 # Pourquoi un mot de passe devrait être illisible ? 
 
 Ok, un mot de passe est toujours une somme de points car il doit être protégé. C'est tout à fait normal.
-Mais vous avez peut être parfois un doute en remplissant le champs du mot de passe. 
+Mais parfois, vous pouvez avoir un doute en remplissant le champs de votre mot de passe. 
 Et alors, une petite phrase assassine vous dit _"Votre mot de passe n'est pas valide"_. 
-Et oui, où est l'erreur ? est-ce le mauvais password ou bien vous vous êtes emmêlé les doigts sur votre clavier.
+Et oui, où est l'erreur ? est-ce le mauvais password ou bien vous vous êtes emmêlé les doigts sur votre clavier ?
 
-Alors pour les utilisateurs de votre site, je vous propose une solution aperçu sur le net [le sign-up de huffduffer de Jeremy Keith](http://huffduffer.com/signup/)qui va simplifier la vie.
+Alors pour les futurs utilisateurs de votre site, je vous propose une solution aperçu sur le net [le sign-up de huffduffer de Jeremy Keith](http://huffduffer.com/signup/) qui va vous simplifier la vie.
 
-Tout d'abord un formulaire. Vous voyez qu'il est basique. Rien n'indique que vous allez rendre lisible le champs "password", il est bien de type="password". Ce sera bien des points noirs qui rempliront le champs mais si javascript est désactivé, le formulaire restera tout simplement
-sous cette forme.
+Tout d'abord un formulaire. Vous voyez qu'il est basique. Rien n'indique que vous allez rendre lisible le champs "password", il est bien de type="password". Ce sera bien des points noirs qui rempliront le champs et si javascript est désactivé, le formulaire restera tout simplement sous cette forme.
 
 ###### -> script testé avec Safari, FF, Opera, Google Chrome.
 
@@ -62,8 +61,8 @@ jQuery(function($) {
 
 
 
-## Ma version en DOM-Javascript
-Le script utilise seulement le dom et javascript pour créer à la volée la transformation 
+## Ma version en Vanilla JS
+Le script utilise seulement le Dom et Javascript pour créer à la volée la transformation 
 de votre champs de type="password " en type="text". 
 C'est pratique car vous n'êtes pas obligé d'utiliser une librairie complète.
 
@@ -134,7 +133,7 @@ addLoadEvent(prepareInputTextField);
 
 
 
-###### Et voila, à vous de choisir.
+###### Et voilà, à vous de choisir.
 [exemples :](https://github.com/lvdesign/mot-de-passe.git)
 
 les fichiers : 
