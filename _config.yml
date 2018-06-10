@@ -30,8 +30,5 @@ exclude: [
   svg-decorations,
   scss,
   .sass-cache,
-  package.json, 
-  Gruntfile.js, 
-  node_modules, 
   readme.md
 ]
